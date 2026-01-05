@@ -49,9 +49,13 @@ My analysis revealed that while VOCs (Benzene, Toluene, Xylene) help predict PM2
 
 EDA confirmed that pollution levels follow a strict diurnal cycle, peaking during morning and evening rush hours. Furthermore, the analysis proved that the seasonal monsoon cycle has a massive effect on reducing urban pollutants.
 
+![Seasonal_Trend](visualizations/season_aqi_trend.png)
+
 4. **The 11:00 AM CO Divergence**
 
 Discovered a secondary Carbon Monoxide peak at 11:00 AM, diverging from $NO_2$ and $PM_{2.5}$ trends. This identifies CO as a critical marker for heavy commercial vehicle traffic following morning restriction lifts.
+
+![Dinural_Cycle](visualizations/dinural_pollution_cycles.png)
 
 # Machine Learning & Discussion
 
@@ -90,6 +94,10 @@ I compared a baseline Decision Tree against an ensemble Random Forest to predict
 | V3    | Basic Gases + PM10 | 0.79 | 20.88 | High efficiency, PM10 is the key predictor |
 | V4    | All Pollutants | 0.81 | 19.96 | The model confirms the VOC redundancy |
 
+![Model_V3_Eval](visualizations/model_v3_regression_accuracy.png)
+
+![Regression_Model_Eval](visualizations/regression_model_evolution.png)
+
 # Classification Model Performance Summary (AQI Buckets)
 
 | Model | Technique | Accuracy | Interpretation |
@@ -97,6 +105,7 @@ I compared a baseline Decision Tree against an ensemble Random Forest to predict
 | Baseline | Decision Tree | 66.7% | High interpretability (Visualization) |
 | Ensemble | Random Forest | 70.5% | Higher precision in Moderate/Satisfactory, Poor |
 
+![Classification_Model_Eval](visualizations/confusion_matrices_for_DT_RF_classifiers.png)
 
 # Future Work
 
