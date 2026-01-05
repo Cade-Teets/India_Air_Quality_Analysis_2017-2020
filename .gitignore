@@ -1,35 +1,34 @@
---- Data Files ---
-
-Ignore the raw CSVs because they are too large for GitHub (100MB+ limit).
+# --- Data Files ---
+# Ignore the raw CSVs because they are too large for GitHub (100MB+ limit).
 
 *.csv
 *.xlsx
 *.zip
 *.7z
 
---- Python Environment ---
+# --- Python Environment ---
 
-Standard folders for virtual environments and cached files
+# Standard folders for virtual environments and cached files
 
 venv/
 env/
 .env
-pycache/
+__pycache_/
 *.py[cod]
 *$py.class
 
---- Jupyter Notebooks ---
+# --- Jupyter Notebooks ---
 
-Ignores the hidden checkpoint folders created by Jupyter
+# Ignores the hidden checkpoint folders created by Jupyter
 
 .ipynb_checkpoints/
 
---- Operating System ---
+# --- Operating System ---
 
 .DS_Store
 Thumbs.db
 
---- Visuals & Logs ---
+# --- Visuals & Logs ---
 
 *.log
 *.pdf
